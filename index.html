@@ -229,6 +229,133 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/31/Mac下APUE环境配置/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/07/31/Mac下APUE环境配置/" itemprop="url">Mac下APUE环境配置</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-31T23:54:31+08:00">
+                2019-07-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>##前言<br>最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要是讲解如何在mac环境下搭建APUE的源码工程，基于第三版！！</p>
+<p>##配置运行环境</p>
+<ul>
+<li>首先去官网下载源码tar包，地址：<a href="http://www.apuebook.com/apue3e.html" target="_blank" rel="noopener">http://www.apuebook.com/apue3e.html</a>或者直接下载：<a href="http://www.apuebook.com/src.3e.tar.gz" target="_blank" rel="noopener">http://www.apuebook.com/src.3e.tar.gz</a></li>
+<li>将下载好的包放到本地喜欢的目录解压，进入解压目录后将<strong>error.c</strong>和<strong>apue.h</strong>拷贝到相应的路径下：<code>cp include/apue.h /usr/local/include</code>和<code>cp lib/error.c /usr/local/include/</code></li>
+<li>然后将拷贝过去的<code>apue.h</code>中的最后一个<code>#endif</code>前，将<code>error.c</code>使用#include进去，如下：<img src="/2019/07/31/Mac下APUE环境配置/1.png" title="This is an example image"></li>
+<li>到此结束</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/29/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,7 +521,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
