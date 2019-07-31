@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="##前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章">
+<meta name="description" content="前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac下APUE环境配置">
 <meta property="og:url" content="http://yoursite.com/2019/07/31/Mac下APUE环境配置/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章">
+<meta property="og:description" content="前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2019/07/31/Mac下APUE环境配置/1.png">
-<meta property="og:updated_time" content="2019-07-31T16:44:59.775Z">
+<meta property="og:updated_time" content="2019-07-31T16:51:45.296Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac下APUE环境配置">
-<meta name="twitter:description" content="##前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章">
+<meta name="twitter:description" content="前言最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要">
 <meta name="twitter:image" content="http://yoursite.com/2019/07/31/Mac下APUE环境配置/1.png">
 
 
@@ -301,9 +301,8 @@
       
 
       
-        <p>##前言<br>最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要是讲解如何在mac环境下搭建APUE的源码工程，基于第三版！！</p>
-<p>##配置运行环境</p>
-<ul>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要是讲解如何在mac环境下搭建APUE的源码工程，基于第三版！！</p>
+<h2 id="配置运行环境"><a href="#配置运行环境" class="headerlink" title="配置运行环境"></a>配置运行环境</h2><ul>
 <li>首先去官网下载源码tar包，地址：<a href="http://www.apuebook.com/apue3e.html" target="_blank" rel="noopener">http://www.apuebook.com/apue3e.html</a>或者直接下载：<a href="http://www.apuebook.com/src.3e.tar.gz" target="_blank" rel="noopener">http://www.apuebook.com/src.3e.tar.gz</a></li>
 <li>将下载好的包放到本地喜欢的目录解压，进入解压目录后将<strong>error.c</strong>和<strong>apue.h</strong>拷贝到相应的路径下：<code>cp include/apue.h /usr/local/include</code>和<code>cp lib/error.c /usr/local/include/</code></li>
 <li>然后将拷贝过去的<code>apue.h</code>中的最后一个<code>#endif</code>前，将<code>error.c</code>使用#include进去，如下：<img src="/2019/07/31/Mac下APUE环境配置/1.png" title="This is an example image"></li>
@@ -393,8 +392,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -436,6 +444,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置运行环境"><span class="nav-number">2.</span> <span class="nav-text">配置运行环境</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

@@ -300,9 +300,8 @@
       
         
           
-            <p>##前言<br>最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要是讲解如何在mac环境下搭建APUE的源码工程，基于第三版！！</p>
-<p>##配置运行环境</p>
-<ul>
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近打算分析学习nginx和redis源码，主要目的是想通过分析优秀的开源软件学习顶尖高手的软件设计思路，同时通过学习优秀的开源软件将会学习很多知识。本人比较喜欢偏底层的知识体系，而nginx和redis又都是用c语言写的，都是开源里面非常优秀的软件，涉及到大量的系统底层编程，可谓知识的盛宴。所以在研究源码时，需要学习APUE相关知识，APUE即unix网络环境高级编程，经典书籍。本篇文章主要是讲解如何在mac环境下搭建APUE的源码工程，基于第三版！！</p>
+<h2 id="配置运行环境"><a href="#配置运行环境" class="headerlink" title="配置运行环境"></a>配置运行环境</h2><ul>
 <li>首先去官网下载源码tar包，地址：<a href="http://www.apuebook.com/apue3e.html" target="_blank" rel="noopener">http://www.apuebook.com/apue3e.html</a>或者直接下载：<a href="http://www.apuebook.com/src.3e.tar.gz" target="_blank" rel="noopener">http://www.apuebook.com/src.3e.tar.gz</a></li>
 <li>将下载好的包放到本地喜欢的目录解压，进入解压目录后将<strong>error.c</strong>和<strong>apue.h</strong>拷贝到相应的路径下：<code>cp include/apue.h /usr/local/include</code>和<code>cp lib/error.c /usr/local/include/</code></li>
 <li>然后将拷贝过去的<code>apue.h</code>中的最后一个<code>#endif</code>前，将<code>error.c</code>使用#include进去，如下：<img src="/2019/07/31/Mac下APUE环境配置/1.png" title="This is an example image"></li>
